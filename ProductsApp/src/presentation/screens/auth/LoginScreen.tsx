@@ -5,11 +5,14 @@ import { useWindowDimensions } from 'react-native';
 import { CustomIcon } from '../../components/ui/CustomIcon';
 import { StackScreenProps } from '@react-navigation/stack';
 import { RootStackParams } from '../../routes/StackNavigator';
+import { STAGE } from '@env';
 
 interface Props extends StackScreenProps<RootStackParams, 'LoginScreen'> {}
 
 export const LoginScreen = ({ navigation }: Props) => {
   const { height } = useWindowDimensions();
+
+  console.log(STAGE);
 
   return (
     <Layout style={{ flex: 1 }}>
