@@ -1,6 +1,6 @@
-import { products } from '@/store/products.store';
 import { Link } from 'expo-router';
 import { View, Text, FlatList } from 'react-native';
+import { products } from '@/store/products.store';
 
 const ProductsScreen = () => {
     return (
@@ -20,7 +20,7 @@ const ProductsScreen = () => {
                                 {item.price}
                             </Text>
                             <Link
-                                href={`/tabs/(stack)/products/${item.id}`}
+                                href={`/products/${item.id}`}
                                 className='text-primary'>
                                 Ver detalles
                             </Link>

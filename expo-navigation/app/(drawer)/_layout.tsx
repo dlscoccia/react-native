@@ -30,6 +30,21 @@ export default function DrawerLayout() {
                 }}
             />
             <Drawer.Screen
+                name='(tabs)'
+                options={{
+                    headerShown: false,
+                    drawerLabel: 'Tabs + Stack',
+                    title: 'Tabs + Stack',
+                    drawerIcon: ({ color, size }) => (
+                        <Ionicons
+                            name='albums-outline'
+                            size={size}
+                            color={color}
+                        />
+                    ),
+                }}
+            />
+            <Drawer.Screen
                 name='schedule/index'
                 options={{
                     drawerLabel: 'Schedule',
